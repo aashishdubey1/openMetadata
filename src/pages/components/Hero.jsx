@@ -1,6 +1,9 @@
 import React from 'react'
 import {ChevronRight, Zap } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 const Hero = () => {
+    const navigate = useNavigate()
+
   return (
      <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -24,7 +27,7 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <button className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-600 hover:to-indigo-700 transition-all transform hover:scale-105 shadow-lg">
+              <button className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-600 hover:to-indigo-700 transition-all transform hover:scale-105 shadow-lg" onClick={()=>navigate('/login')}>
                 Get Started Free
                 <ChevronRight className="w-5 h-5 ml-2 inline" />
               </button>

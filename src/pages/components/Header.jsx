@@ -52,7 +52,7 @@ const Header = ({isMenuOpen,isScrolled,setIsMenuOpen}) => {
               <Link href="#" className="block text-gray-300 hover:text-white transition-colors">Docs</Link>
               <Link href="#" className="block text-gray-300 hover:text-white transition-colors">Community</Link>
               <Link href="#" className="block text-gray-300 hover:text-white transition-colors">Blog</Link>
-              <button className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all">
+              <button className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all" onClick={()=>navigate('/login')}>
                 Get Started
               </button>
             </div>
