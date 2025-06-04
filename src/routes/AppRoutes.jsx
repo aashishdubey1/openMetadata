@@ -6,26 +6,30 @@ import PrivateRoutes from './PrivateRoutes'
 
 
 
-const router = createBrowserRouter([
-
+const router = createBrowserRouter(
+  [
     {
-        path:"/",
-        element:<LandingPage />
+      path: "/",
+      element: <LandingPage />
     },
     {
-        path:'/login',
-        element:<LoginPage />
+      path: "/login",
+      element: <LoginPage />
     },
     {
-        element:<PrivateRoutes />,
-        children:[
-          {
-          path:'/dashboard',
-          element:<Dashboard />
+      element: <PrivateRoutes />,
+      children: [
+        {
+          path: "/dashboard",
+          element: <Dashboard />
         }
-        ]
+      ]
     }
-])
+  ],
+  {
+    basename: "/openMetadata",
+  }
+);
 
 const AppRoutes = () => {
   return (
