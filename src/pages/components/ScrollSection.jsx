@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
  const technologies = [
     'Apache Kafka', 'Snowflake', 'BigQuery', 'Databricks', 'Apache Airflow',
     'dbt', 'PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch',
