@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Database,Menu } from 'lucide-react'
+import { Database,Menu,X } from 'lucide-react'
 
 import { Link, useNavigate } from 'react-router-dom'
 
